@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Admin Login Button */
+.admin-login {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark form background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #dddddd;
+    font-size: 14px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Dark input background */
+    color: white;
+    font-size: 14px;
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Submit Button */
+button {
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling (for Admin Page) */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+th {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+td {
+    background-color: #2a2a2a;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}

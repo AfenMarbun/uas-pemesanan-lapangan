@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Lapangan Olahraga</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="admin-login">
+            <a href="admin/login.php">
+                <button type="button" class="login-button">Login Admin</button>
+            </a>
+        </div>
+        <h1>Pemesanan Lapangan Olahraga</h1>
+    </header>
+
+    <!-- Form Pemesanan -->
+    <form id="bookingForm" action="save_booking.php" method="POST">
+        <label for="name">Nama Pemesan:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="whatsapp">Nomor WhatsApp:</label>
+        <input type="tel" id="whatsapp" name="whatsapp" pattern="(\+62|62|0)8[1-9][0-9]{6,10}" required placeholder="Contoh: +628123456789">
+
+        <label for="date">Tanggal Pemesanan:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="field">Pilih Lapangan:</label>
+        <select id="field" name="field" required>
+            <option value="Sepak Bola">Sepak Bola</option>
+            <option value="Bola Basket">Basket</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Futsal">Futsal</option>
+            <option value="Bola Voli">Voli</option>
+        </select>
+
+        <label>
+        <input type="checkbox" id="terms" name="terms" required>
+            Setuju dengan syarat dan ketentuan
+        </label>
+        <button type="submit" >Pesan</button>
+    </form>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
